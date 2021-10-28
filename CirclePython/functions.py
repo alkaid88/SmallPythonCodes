@@ -1,3 +1,7 @@
+# Just a simple 2 functions that are using Pythagorean theorem to draw circle to the screen
+
+
+# This function is for creating circle inside of a list
 def Circle(r):
 	list = []
 	for i in range(-r, r+1, 1):
@@ -9,7 +13,7 @@ def Circle(r):
 		list.append(2)
 	return list
 
-
+# This function uses list to determine what to print
 def DrawCircle(r ,some_list):
 	for x in range(0, 4*r**2+6*r+2, 1):
 		if some_list[x] == 1:
@@ -18,3 +22,4 @@ def DrawCircle(r ,some_list):
 			print(' ', end='')
 		elif some_list[x] == 2:
 			print()
+			
