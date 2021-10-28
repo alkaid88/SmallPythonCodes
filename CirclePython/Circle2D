@@ -1,4 +1,4 @@
-import functions
+import functions # I know very descriptive name for module
 
 print('Please input circle R: ', end='')
 R = int(input())
