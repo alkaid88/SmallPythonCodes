@@ -1,0 +1,6 @@
+import functions
+
+print('Please input circle R: ', end='')
+R = int(input())
+
+functions.DrawCircle(R, functions.Circle(R))
