@@ -1,5 +1,7 @@
 # This program will be yours personal calculator to change physics units values for SI
 
+# Warning work in progress!
+
 import change_units_functions as cuf
 
 start_program = False
