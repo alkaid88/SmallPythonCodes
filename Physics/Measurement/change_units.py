@@ -1,7 +1,5 @@
 # This program will be yours personal calculator to change physics units values for SI
 
-# Warning work in progress!
-
 import change_units_functions as cuf
 
 start_program = False
@@ -9,7 +7,7 @@ show_help = False
 in_program = True
 
 while in_program:
-    print ('This program will help you change SI units.\nInput one of the following: \n\t- [s] => start program, \n\t- [h] = > get help, \n\t- [q] => quit\n\nChoice: ', end='')
+    print ('This program will help you change SI units.\nInput one of the following: \n\t- [s] => start program, \n\t- [h] = > get help, \n\t- [q] => quit.\n\nChoice: ', end='')
     try:
         choice_start = input()
     except ValueError:
@@ -25,8 +23,10 @@ while in_program:
 
     if start_program:
         print ('\nPlease input value (float): ', end='')
-        value = float(input())
-
+        try:
+            value = float(input())
+        except ValueError:
+            value = 1.0
         print ('\nPlease input prefix (string): ', end='')
         prefix = input()
 
@@ -43,18 +43,10 @@ while in_program:
         cuf.get_help()
         
 
-    print('Do you want to quit? [y]: ', end='')
+    print('\nDo you want to quit? [y]: ', end='')
     try:
         choice_quit = input()
     except ValueError:
         quit()
     if choice_quit == 'y':
         in_program = False
-
-
-
-
-
-
-
-

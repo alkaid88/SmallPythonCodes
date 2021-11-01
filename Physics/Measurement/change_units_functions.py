@@ -1,27 +1,5 @@
-jotta = 1000000000000000000000000.0
-zetta = 1000000000000000000000.0
-eksa  = 1000000000000000000.0
-peta  = 1000000000000000.0
-tera  = 1000000000000.0
-giga  = 1000000000.0
-mega  = 1000000.0
-kilo  = 1000.0
-hekto = 100.0
-deka  = 10.0
-unit  = 1.0
-decy  = 0.1
-centy = 0.01
-mili  = 0.001
-mikro = 0.000001
-nano  = 0.000000001
-piko  = 0.000000000001
-femto = 0.000000000000001
-atto  = 0.000000000000000001
-zepto = 0.000000000000000000001
-jokto = 0.000000000000000000000001
-
 def get_help():
-    print ('Welcome to HELP of this simple calculator.\nTo use it as intended follow the instructions and input only valid values\nInput:\n\tvalue (float) - scalar that is multiplier of unit\n\tprefix (string) - is something like kilo, kilo, mini, nano, giga\n\tunit (string) - its just a string you can make something up')
+    print ('\nWelcome to HELP of this simple calculator.\nTo use it as intended follow the instructions and input only valid values\nInput:\n\tvalue (float) - scalar that is multiplier of unit\n\tprefix (string) - is something like kilo, mini, nano, giga\n\tunit (string) - its just a string you can make something up')
 
 def change_prefix_to_number(prefix):
     if prefix == 'yotta':
